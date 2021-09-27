@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD</title>
+        <link rel="stylesheet" href="css_style.css">
+    </head>
+    <body>
+        <div class="Container" >
+            <div class="employee_form">
+                <h4>Insert Employee Records</h4>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                   <div><label class="validation-error hide" id="fullNameValidationError">Enter Name</label><br> <input type="text" name="fullName" id="fullName" placeholder="Enter Name"></div>
+                   <div><label>Enter Age</label><br><input type="number" name="age" id="Age" placeholder="Enter Age"> </div>
+                   <div>
+                       <label>Select Gendar</label><br>
+                       <input type="radio" id="Gendar"class="Gendar" name="gendar" value="male">Male<br>
+                       <input type="radio" id="Gendar" class="Gendar" name="gendar" value="female">Female<br>
+                    </div>
+                    <br>
+                   <div>
+                       <label>Choose Hobby</label><br>
+                        <select id="Hobby" class="hobby">
+                            <option value=""></option>
+                            <option value="cricket">Playing cricket</option>
+                            <option value="footbal">Playing Footbal</option>
+                            <option value="Singing">Singing</option>
+                        </select>
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Insert Record">
+                    </div>
+                </form>
+            </div>
+            <div class = "employees-table">
+                <h4>View Employee Records</h4>
+                <div>
+                    <input type="text" class="search" placeholder="Enter Employee name to search">
+                    <button class="search_btn">search</button>
+                </div>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age</th>
+                            <th>Gendar</th>
+                            <th>Hobby</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+
+        </div>
+
+        <script src="jsScript.js"></script>
+    </body>
+</html>
