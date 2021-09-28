@@ -1,6 +1,6 @@
 body{
     font-family: Andale Mono, monospace;
-    background-color: rgb(243, 244, 255);
+    background-color: rgb(202, 205, 241);
   
 }
 h1{
@@ -43,7 +43,7 @@ flex-direction: column;
     margin-bottom: 0px;
 }
 .faq-page:hover {
-    background-color: #F9F9F9;
+    background-color: #f5f0f0;
 }
 .faq-body {
     padding: 0 18px;
