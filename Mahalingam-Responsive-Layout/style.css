@@ -1,0 +1,132 @@
+.container{
+    text-align: center; 
+    font-family: caveat_font;
+}
+@font-face {
+    font-family: Caveat_font;
+    src: url("./static/Caveat-Bold.ttf") format("TrueType");
+    font-size: 30px;
+  }
+.top{
+    display: flex;
+    gap: 10px;
+    height: 10vh;  
+}
+.img-head-1, .img-head-2,.img-middle-1,.img-middle-2, .img-middle-3 , .img-middle-4{
+    display:inline-block;  
+    width: 36px; 
+    height: 32px;
+}
+.img-head-1 {
+    background: url(spriteimage.svg) -13px -115px;
+}
+.img-head-2{
+    background: url(spriteimage.svg) -55px -115px;
+}
+.img-middle-1 {
+    background: url(spriteimage.svg) 155px -211px;
+}
+.img-middle-2 {
+    background: url(spriteimage.svg) 198px -115px;
+}
+.img-middle-3 {
+    background: url(spriteimage.svg) -855px -115px;
+}
+
+.img-middle-4 {
+    background: url(spriteimage.svg) 291px -115px;
+}
+.top1 , .top2{
+    width:50%;
+    padding-top: 10px;
+    background-color: rgb(250, 154, 64);
+    transition: width 2s;
+}
+#Top1:hover,#Top2:hover
+{
+    width: 35%;
+    background-color: burlywood;
+}
+.middle-1{
+    background-color: rgb(172, 214, 87);
+    height: 30vh;
+    margin: 10px 0px;
+    transition: transform 0.5s;
+}
+#Middle-1:hover
+{
+    background-image: url("image.jpg");
+    background-size:50% auto ;
+    background-repeat: no-repeat;
+    background-position:center;
+    color: cornsilk;
+    object-fit: contain;
+    transform: scale(1.05);
+ 
+}
+.middle-2{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    transition: transform 1s;
+}
+
+.middle-2 .m1{
+    background-color: rgb(53, 100, 230);
+    width :35%;
+    height: 15vh;
+}
+.bottom
+{
+    display: flex;
+    gap: 10px;
+    height: 20vh;
+    justify-content: center;
+}
+.bottom div{
+    background-color: rgb(148, 148, 148);
+    width :25%;
+}
+@media (max-width: 768px) {
+    .top{
+        flex-wrap: wrap; 
+        height: 15vh;
+    }
+    .top1 , .top2{  
+        width: 100%;
+        
+    }
+    .middle-1{
+        height: 20vh;
+    }
+    .middle-2{
+        flex-wrap: wrap;
+    }
+    
+    .middle-2 .m1{
+        height: 6vh;
+        width: 100%;
+    }
+   .bottom {
+       display: flex;
+       flex-wrap: wrap;
+   }
+   .bottom div{
+       width: 49.5%;
+   }  
+}
+@media  (min-width:320px) and (max-width:768px)
+{
+    .bottom{
+        margin:0;
+    } 
+    .bottom div{
+        width: 48%;
+    }  
+}
+@media only screen and (max-width: 320px){
+   .bottom div{
+       width: 100%;
+       height: 5vh;
+   }
+}
