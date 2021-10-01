@@ -7,11 +7,8 @@ question.forEach((faq,index) => {
           return true;
         faq.classList.toggle("active") 
         var body = faq.nextElementSibling; 
-        if (body.style.display === "block") 
-             body.style.display = "none";
-        else 
-             body.style.display = "block";   
-            });
+        body.style.display= (body.style.display === "block") ? "none": "block";   
+        });
 });
 function closefunction()
 {

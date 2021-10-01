@@ -1,6 +1,6 @@
 faq_con=document.getElementById("faq-questions");
 
-var faq_click=document.querySelectorAll("faq-list");
+var faq_click=document.nextSibling;
 console.log(faq_click)
 const faq_l=[
 {
