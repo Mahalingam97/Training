@@ -1,16 +1,11 @@
 var selectedRow = null
-
 function onFormSubmit() {
     if (validate()) {
         var formData = readFormData();
-        if (selectedRow == null)
-            insertNewRecord(formData);
-        else
-            updateRecord(formData);
+        selectedRow == null? insertNewRecord(formData):updateRecord(formData);
         resetForm();
     }
 }
-
 function readFormData() {
     var formData = {};
     formData["fullName"] = document.getElementById("fullName").value;
@@ -19,7 +14,6 @@ function readFormData() {
     formData["Hobby"] = document.querySelector('.hobby').value;
     return formData;
 }
-
 function insertNewRecord(data) {
     var table = document.getElementById("employeeList").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length);

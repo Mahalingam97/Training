@@ -22,7 +22,10 @@ h4 {
 .search {
 	width: 60%;
 }
-
+ .tablescroll{
+	 overflow: scroll;
+	 height: 36vh;
+ }
 .employees-table {
 	border-style: solid;
 	margin-left: 20px;

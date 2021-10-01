@@ -71,26 +71,26 @@
     transition: transform 1s;
 }
 
-.m1{
+.row{
     background-color: rgb(53, 100, 230);
     width :35%;
     height: 15vh;
 }
-#M1:hover
+#left:hover
 {
     background-image: url("./Images/idly.jpeg");
     background-repeat: no-repeat;
     background-size:100% 100%;
     height: 25vh; 
 }
-#M2:hover
+#center:hover
 {
     background-image: url("./Images/dosa.jpeg");
     background-repeat: no-repeat;
     background-size:100% 100%;
     height: 25vh;
 }
-#M3:hover
+#right:hover
 {
     background-image: url("./Images/parota.jpeg");
     background-repeat: no-repeat;
@@ -108,19 +108,19 @@
     background-color: rgb(148, 148, 148);
     width :25%;
 }
-#b1:hover{
+#bottom1:hover{
     background-image: url('./Images/nonveg.png');
     background-size: 100% 100%;
 }
-#b2:hover{
+#bottom2:hover{
     background-image: url('./Images/veg.jpg');
     background-size: 100% 100%;
 }
-#b3:hover{
+#bottom3:hover{
     background-image: url('./Images/snacks.jpg');
     background-size: 100% 100%;
 }
-#b4:hover{
+#bottom4:hover{
     background-image: url('./Images/Drinks.jpg');
     background-size: 100% 100%;
 }
@@ -140,7 +140,7 @@
         flex-wrap: wrap;
     }
     
-    .middle-2 .m1{
+    .middle-2 .row{
         height: 6vh;
         width: 100%;
     }

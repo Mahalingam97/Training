@@ -1,10 +1,10 @@
 var faq = document.querySelectorAll(".faq-page");
-var question=[...faq];
-question.forEach(faq => {
+var question=[...faq]; 
+question.forEach((faq,index) => {
     faq.addEventListener("click", function () { 
         let closeindex=closefunction();
-        if(closeindex===question.indexOf(faq))
-           return true;
+        if(closeindex===index)
+          return true;
         faq.classList.toggle("active") 
         var body = faq.nextElementSibling; 
         if (body.style.display === "block") 
@@ -26,5 +26,4 @@ function closefunction()
         }
         } 
     }
-
 }
