@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyTask5</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <a class="nav-link" href="#Home">Home</a>
+            <a class="nav-link" href="#Overlay">Overlay</a>
+            <a class="nav-link" href="#ImageUpload">Image</a>
+            <a class="nav-link" href="#Pagination">Pagination</a>       
+        </nav>
+        <div id="Home">
+          <h1>Indian Food Culture</h1>
+          <div class="container">
+          <div class="content">
+              <p>Indian food is different from rest of the world not only in taste but also in cooking methods. It reflects a perfect blend of various cultures and ages. Just like Indian culture, food in India has also been influenced by various civilizations, which have contributed their share in its overall development and the present form.</p><br>
+              <p>Foods of India are better known for its spiciness. Throughout India, be it North India or South India, spices are used generously in food. But one must not forget that every single spice used in Indian dishes carries some or the other nutritional as well as medicinal properties.</p>
+          </div>
+            <div class="Image">
+                <img src="./Images/IndianFood.jfif" alt="Food"/>
+            </div>
+        </div>
+        </div>   
+
+        <div id="Overlay">
+          <h1>Types of Indian Food</h1>
+          <h2>North Indian Food</h2>
+
+          <div class="container food">
+
+            <div class="content">
+                <p>Food in the north India, to begin with, Kashmiri cuisines reflect strong Central Asian influences. In Kashmir, mostly all the dishes are prepared around the main course of rice found abundantly in the beautiful valley. Another delicious item cooked here is the ‘Saag’ that is prepared with a green leafy vegetable known as the ‘Hak’.</p>
+            </div>
+
+            <div class="show">
+                <div class="popup" id="popup-1">
+                    <div class="imgcontent">
+                    <img class="foodimage" src="./Images/NorthIndian.jpg" alt="north"/>
+                    <button class="cbtn" onclick="closenorth()">close</button>
+                </div>
+                </div>
+                <button  onclick="opennorth()">Click here to view Image</button>
+            </div>
+          </div>
+
+
+          <h2>South Indian Food</h2>
+          <div class="container food">
+            <div class="content">
+                <p>In the southern India, the states make great use of spices, fishes and coconuts, as most of them have coastal kitchens. In the foods of Tamil Nadu use of tamarind is frequently made in order to impart sourness to the dishes. It simply distinguishes the Tamil Food from other cuisines</p>
+                <p>The cooking style of Andhra Pradesh is supposed to make excessive use of chilies, which is obviously to improve the taste of the dishes.</p>
+            </div>
+            <div class="show">
+                <div class="popup" id="popup-2">
+                    <div class="imgcontent">
+                    <img class="foodimage" src="./Images/SouthIndian.jpg" alt="north"/>
+                    <button class="cbtn" onclick="closesouth()">close</button>
+                </div>
+                </div>
+                <button  onclick="opensouth()">Click here to view Image</button>
+            </div>
+          </div>
+        </div>
+        <div id="ImageUpload">
+            <h2> Uplaod any Image</h2>
+            <div class="fileupload">
+            <p><input type="file" accept="image/*" name="image" id="file" onchange="loadfile(event)"></p>
+            <p><label id="Upload" >Upload image</label></p>
+           </div>
+            <div class="imagedisplay">
+                <p><img id="output" /></p>
+            </div>
+         </div>
+        <div id="Pagination">
+         <h1>Today Specials</h1><br>
+         
+         <div class="menu">
+             <table class="list" id="view-menu">
+                 <thead>
+                     <tr>
+                         <th>Day content</th>
+                         <th>special items</th>
+                     </tr>
+                 </thead>
+                 <tbody id="display-items">
+                 </tbody>
+             </table>
+         </div>
+<div class="page-nav">
+<button onclick="prevPage()" id="btn_prev">Prev</button>
+<button onclick="nextPage()" id="btn_next">Next</button>
+page: <span id="page"></span>
+</div>
+</div>
+        
+        <script src="action.js"></script>
+    </body>
+</html>
